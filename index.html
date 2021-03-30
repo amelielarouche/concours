@@ -8,6 +8,7 @@
     <link rel="icon" href="favicon.ico">
 </head>
 <body>
+    <div class="conteneur">
      <header role="banner">
          <picture>
              <source media="(max-width:600px)" srcset="images/bandeau_600.jpg">
@@ -16,8 +17,8 @@
          </picture>
      </header>
 
-     <main role="main">
-         <aside role="complementary">
+     <main class="rangee" role="main">
+         <aside class="aside cols_4_de_12" role="complementary">
              <h1>Concours</h1>
              <p>Complétez le coupon de participation et répondez à la question du jour ci- dessous.</p>
              <p>30 finalistes accompagnés seront invités le jeudi 1er mars au restaurant Blumenthal
@@ -25,51 +26,51 @@
                  un grand gagnant s’envolera vers la destination de son choix!</p>
              <p>Vous avez jusqu'au vendredi 9 février à midi pour participer. Bonne chance à tous!</p>
          </aside>
-         <form role="form">
-             <fieldset>
+         <form class="form cols_8_de_12" role="form">
+             <fieldset class="coupon">
                  <legend>
                      <h2>Coupon de participation</h2>
                  </legend>
-                 <fieldset>
+                 <fieldset class="complet">
                      <legend>
                          <h3>Nom complet</h3>
                      </legend>
-                     <div class="rangee">
-                     <p class="cols_4_de_12">
-                         <label for="name">Prénom</label>
-                         <input type="text" id="name" name="name" required pattern="[a-zA-ZÀ-ÿ \-]+">
-                     </p>
-                     <p class="cols_4_de_12">
-                         <label for="name">Nom</label>
-                         <input type="text" id="name" name="name" required pattern="[a-zA-ZÀ-ÿ \-]+">
-                     </p>
+                     <div class="rangee nomComplet cols_6_de_12">
+                         <p class="cols_6_de_12">
+                           <label for="name">Prénom</label>
+                           <input type="text" id="name" name="name" required pattern="[a-zA-ZÀ-ÿ \-]+">
+                         </p>
+                         <p class="cols_6_de_12">
+                           <label for="name">Nom</label>
+                             <input type="text" id="name" name="name" required pattern="[a-zA-ZÀ-ÿ \-]+">
+                         </p>
                      </div>
                      <p class="erreur">
                          <span>
                              <span class="screen-reader-only">Avertissement</span>
-                             <span class="icon icon-avertissement"></span>
+                             <span class="icone icone--avertissement"></span>
                          </span>
                          Le prénom ou le nom comporte un ou plusieurs caractères interdits.</p>
 
                  </fieldset>
-                 <p>
+                 <p class="adresse">
                     <label for="adresse">Adresse</label>
                     <input type="text" id="adresse" name="adresse" required>
                  </p>
                  <p class="erreur">
                      <span>
                              <span class="screen-reader-only">Avertissement</span>
-                             <span class="icon icon-avertissement"></span>
+                             <span class="icone icone--avertissement"></span>
                          </span>
                      L’adresse est requise.</p>
                  <p>
                      <label for="ville">Ville</label>
-                     <input type="text" id="ville" name="ville" required pattern="[a-zA-ZÀ-ÿ \-]+">
+                     <input class="cols_6_de_12" type="text" id="ville" name="ville" required pattern="[a-zA-ZÀ-ÿ \-]+">
                  </p>
                  <p class="erreur">
                      <span>
                              <span class="screen-reader-only">Avertissement</span>
-                             <span class="icon icon-avertissement"></span>
+                             <span class="icone icone--avertissement"></span>
                      </span>
                      Attention, le nom de la ville comporte un ou plusieurs caractères interdits.</p>
                  <p>
@@ -145,7 +146,7 @@
                  <p class="erreur">
                      <span>
                              <span class="screen-reader-only">Avertissement</span>
-                             <span class="icon icon-avertissement"></span>
+                             <span class="icone icone--avertissement"></span>
                      </span>
                      La province ou l’état d’origine doit être précisé.</p>
                  <p>
@@ -156,7 +157,7 @@
                  <p class="erreur">
                      <span>
                              <span class="screen-reader-only">Avertissement</span>
-                             <span class="icon icon-avertissement"></span>
+                             <span class="icone icone--avertissement"></span>
                      </span>
                      Le code postal doit respecter le format X1X 1X1.</p>
                  <p>
@@ -166,48 +167,48 @@
                  <p class="erreur">
                      <span>
                              <span class="screen-reader-only">Avertissement</span>
-                             <span class="icon icon-avertissement"></span>
+                             <span class="icone icone--avertissement"></span>
                      </span>
                      Attention, le courriel comporte un ou plusieurs caractères interdits.</p>
-                 <fieldset>
+                 <fieldset class="telephone">
                      <legend>
                          <h3>Téléphone (indicatif - numéro)</h3>
                      </legend>
-                     <div class="rangee">
-                     <p class="cols_2_de_12">
-                         <label for="indicatif">Indicatif</label>
-                         <input type="number" id="indicatif" name="indicatif" required maxlength="3">
-                     </p>
-                     <p class="cols_6_de_12">
-                         <label for="numéro">Numéro</label>
-                         <input type="tel" id="numéro" name="numéro" required maxlength="7">
-                     </p>
+                     <div class="rangee telephone">
+                         <p class="cols_2_de_12">
+                           <label for="indicatif">Indicatif</label>
+                           <input type="number" id="indicatif" name="indicatif" required maxlength="3">
+                         </p>
+                         <p class="cols_6_de_12">
+                            <label for="numéro">Numéro</label>
+                            <input type="tel" id="numéro" name="numéro" required maxlength="7">
+                         </p>
                      </div>
                      <p class="erreur">
                          <span>
                              <span class="screen-reader-only">Avertissement</span>
-                             <span class="icon icon-avertissement"></span>
+                             <span class="icone icone--avertissement"></span>
                          </span>
                          Attention, le numéro de téléphone ne doit pas comporter d’espace ou de trait d’union.</p>
                  </fieldset>
              </fieldset>
 
-             <fieldset>
+             <fieldset class="question">
                  <legend>
                      <h2>Question du jour</h2>
                  </legend>
-                 <fieldset>
+                 <fieldset class="date">
                      <legend>
                          <h3>Date à laquelle la question a été posée?</h3>
                      </legend>
-                     <div class="rangee">
-                     <p class="cols_4_de_12">
-                         <label for="jour">Jour</label>
-                         <input type="number" id="jour" name="jour" required maxlength="2">
-                     </p>
-                     <p class="cols_4_de_12">
-                         <label for="numéro">Numéro</label>
-                         <select id="pays" name="pays" required>
+                     <div class="rangee date">
+                         <p class="cols_4_de_12">
+                            <label for="jour">Jour</label>
+                            <input type="number" id="jour" name="jour" required maxlength="2">
+                         </p>
+                         <p class="cols_4_de_12">
+                             <label for="numéro">Numéro</label>
+                             <select id="pays" name="pays" required>
                                  <option value="JAN">Janvier</option>
                                  <option value="FEV">Février</option>
                                  <option value="MS">Mars</option>
@@ -220,57 +221,60 @@
                                  <option value="OC">Octobre</option>
                                  <option value="NV">Novembre</option>
                                  <option value="DC">Décembre</option>
-                         </select>
-                     </p>
-                     <p class="cols_4_de_12">
-                         <label for="année">Année</label>
-                         <input type="number" id="année" name="année"  required maxlength="4">
-                     </p>
+                             </select>
+                        </p>
+                        <p class="cols_4_de_12">
+                           <label for="année">Année</label>
+                           <input type="number" id="année" name="année"  required maxlength="4">
+                        </p>
                      </div>
                      <p class="erreur">
                          <span>
                              <span class="screen-reader-only">Avertissement</span>
-                             <span class="icon icon-avertissement"></span>
+                             <span class="icone icone--avertissement"></span>
                          </span>
                          SVP, entrez la date complète.</p>
                  </fieldset>
-                 <fieldset>
+                 <fieldset class="monuments">
                      <legend>
                          <h3>Lequel de ces monuments est un mausolée?</h3>
                      </legend>
                      <div class="rangee">
-                     <ul>
+                     <ul class="musee">
                          <li class="cols_4_de_12">
                              <label>
-                             <input type="radio" id="image1" name="image1" required>
+                             <input type="radio" id="image1" name="image1" required
+                                    class="screen-reader-only">
                                  <picture>
                                      <source media="(max-width:600px)" srcset="images/chateaudIf-small.jpg">
                                      <source media="(min-width:601px)" srcset="images/chateaudIf.jpg">
                                      <img src="images/chateaudIf-small.jpg" alt="ChâteaudIf">
                                  </picture>
-                                 <figcaption>Le château d'If</figcaption>
+                                 <span>Le château d'If</span>
                               </label>
                          </li>
                          <li class="cols_4_de_12">
                              <label>
-                                 <input type="radio" id="image2" name="image2">
+                                 <input type="radio" id="image2" name="image2"
+                                        class="screen-reader-only">
                                  <picture>
                                      <source media="(max-width:600px)" srcset="images/palaisluxembourg-small.jpg">
                                      <source media="(min-width:601px)" srcset="images/palaisluxembourg.jpg">
                                      <img src="images/palaisluxembourg-small.jpg" alt="Palais du Luxembourg">
                                  </picture>
-                                 <figcaption>Le palais du Luxembourg</figcaption>
+                                 <span>Le palais du Luxembourg</span>
                              </label>
                          </li>
                          <li class="cols_4_de_12">
                              <label>
-                                 <input type="radio" id="image3" name="image3">
+                                 <input type="radio" id="image3" name="image3"
+                                        class="screen-reader-only">
                                  <picture>
                                      <source media="(max-width:600px)" srcset="images/tajmahal-small.jpg">
                                      <source media="(min-width:601px)" srcset="images/tajmahal.jpg">
                                      <img src="images/tajmahal-small.jpg" alt="Taj Mahal">
                                  </picture>
-                                 <figcaption>Le palais du Luxembourg</figcaption>
+                                 <span>Taj Mahal</span>
                              </label>
                          </li>
                      </ul>
@@ -278,32 +282,33 @@
                      <p class="erreur">
                          <span>
                              <span class="screen-reader-only">Avertissement</span>
-                             <span class="icon icon-avertissement"></span>
+                             <span class="icone icone--avertissement"></span>
                          </span>
                          Veuillez répondre à la question du jour.</p>
                  </fieldset>
              </fieldset>
              <p>
-                 <input type="checkbox" id="reglement" name="reglement" required>
-                 <label for="reglement">J'ai lu et j'accepte le <a href="../tp4/pdf/Reglements-Voyage-De-Reve-Au-Menu.pdf">
+                 <input class="case" type="checkbox" id="reglement" name="reglement" required>
+                 <label class="case" for="reglement">J'ai lu et j'accepte le <a href="../tp4/pdf/Reglements-Voyage-De-Reve-Au-Menu.pdf">
                      Règlement du concours </a>et je confirme avoir
                      atteint l’âge de majorité dans ma province de résidence.</label>
              </p>
              <p class="erreur">
                  <span>
                      <span class="screen-reader-only">Avertissement</span>
-                     <span class="icon icon-avertissement"></span>
+                     <span class="icone icone--avertissement"></span>
                  </span>
                  SVP, acceptez le règlement du concours.</p>
              <p>
-                 <input type="checkbox" id="documentation" name="documentation" required>
-                 <label for="documentation">Oui, j’accepte de recevoir de la documentation de Radio- Canada.</label>
+                 <input class="case" type="checkbox" id="documentation" name="documentation" required>
+                 <label class="case" for="documentation">Oui, j’accepte de recevoir de la documentation de Radio- Canada.</label>
              </p>
              <p>
                  <button name="Soumettre"value="Soumettre">Soumettre le formulaire</button>
              </p>
          </form>
      </main>
+    </div>
 
      <footer role="contentinfo">
          <small>© 2021, Prénom Nom. Réalisé dans le cadre du cours Intégration II, Programme TIM, Cégep de Sainte-Foy.</small>

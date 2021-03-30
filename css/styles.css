@@ -36,3 +36,107 @@
 /* Mise en page
    ========================================================================== */
 @import url(_form.css);
+
+.nomComplet .rangee,
+.telephone .rangee,
+.date .rangee {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+.nomComplet .cols_6_de_12 {
+    width: 49%;
+}
+
+.coupon {
+    background-color: #DCDCDC;
+    border: none;
+}
+
+.question {
+    background-color: #DCDCDC;
+    border: none;
+}
+.adresse {
+    display: inline-block;
+    width: 100%;
+}
+fieldset {
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+.complet,
+.telephone,
+.date,
+.monuments {
+    border-color: red;
+}
+label {
+    display: block;
+}
+
+input {
+    width: 100%;
+}
+.case {
+    width: auto;
+    display: inline;
+
+}
+.aside {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+input[type=radio]+label {
+    display: inline-block;
+    background-color: #d6dfcf;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    flex-basis: 49%;
+    text-align: center;
+}
+
+[type=radio]:hover+label,
+[type=radio]:focus+label {
+    background-color: #dfce99;
+}
+[type=radio]:checked+label {
+    background-color: #dfaf57;
+}
+
+button{
+    padding: 0.5rem;
+    background-color: #d6dfcf;
+}
+button:hover,
+button:focus{
+    background-color: #dfce99;
+}
+.musee {
+    list-style: none;
+}
+.screen-reader-only {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.screen-reader-only.focusable:active,
+.screen-reader-only.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+input[type=radio]:hover + label {
+    border-color: black;
+}
